@@ -180,7 +180,6 @@ function render() {
   }
   tbody.innerHTML = '';
   tbody.appendChild(frag);
-  if (filtered.length > 500) info.textContent += '（先頭500件を表示）';
 }
 makerSel.addEventListener('change', () => { updateSeriesOptions(); render(); });
 seriesSel.addEventListener('change', render);
